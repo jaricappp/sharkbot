@@ -16,7 +16,12 @@ client.on("message", async message => {
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
-    
+        if(cmd === "destroy") {
+        if(!message.member.roles.some(r=>["bot-user"].includes(r.name)) )
+            return message.channel.send("Negative.");
+            message.delete().catch(O_o=>{}); 
+            client.destroy()
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
