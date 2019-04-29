@@ -1,0 +1,22 @@
+{
+  "name": "corsac",
+  "version": "3.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jaricappp",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {},
+  "description": "oof",
+  "repository": {
+    "type": "git",
+    "url": "E"
+  },
+  "keywords": [
+    "sharkbot"
+  ]
+}
