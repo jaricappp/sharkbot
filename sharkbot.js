@@ -7,7 +7,7 @@ client.on("message", async message => {
         return message.reply("I'm not saying that.");
     if(message.author.bot) return;
     if(message.content.indexOf(config.prefix) !== 0) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.se(config.prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     
     if(cmd === "say") {
