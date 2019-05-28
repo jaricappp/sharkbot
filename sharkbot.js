@@ -10,10 +10,7 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
     
     if(cmd === "say") {
-        if(!message.member.roles.some(r=>["bot-user"].includes(r.name)) )
-            return message.channel.send("I'm not saying that.");
     const sayMessage = args.join(" ");
-    message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
         if(cmd === "destroy") {
