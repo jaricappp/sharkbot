@@ -2,6 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client({disableEveryone: true});
 const config = require("./config.json");
 
+client.on("ready", async () => {
+  console.log(`${client.user.username} is online on ${client.guilds.size} servers!`);
+
+});
+
 client.on("message", async message => {
 
     if(message.author.bot) return;
